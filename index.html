@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Сайт прогнозу погоди</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Найпростіший прогноз погоди</h1>
+        </header>
+        
+        <form id="formCity">
+            <label for="cityName">Enter city name:</label>
+            <input id="inputCityName" type="text" name="cityName"/>
+            <input type="button" id="btnGetWeather" value="Get Weather"/>
+        </form>
+
+        <p>Місто: <span id="location" ></span></p>
+
+        <table id="weatherTable">
+            <tr>
+                <th>Коли</th><th>Небо</th><th>Температура</th><th>Стан</th>
+            </tr>
+        </table>
+
+        <p id="error"></p>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="scripts/weatherService.js"></script>
+        <script src="scripts/weatherByCity.js"></script>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
